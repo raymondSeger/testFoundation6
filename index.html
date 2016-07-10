@@ -11,7 +11,7 @@
 <body>
 
 <div class="small-10 columns">
-  <div class="slider" data-slider data-initial-start="50" data-step="5">
+  <div id="theSlider" class="slider" data-slider data-initial-start="50" data-step="5">
     <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput2"></span>
     <span class="slider-fill" data-slider-fill></span>
   </div>
@@ -26,6 +26,8 @@
 
 <script>
 $(document).foundation();
+
+var elem = new Foundation.Slider($('#theSlider'), {step: 50});
 
 </script>
 </body>
