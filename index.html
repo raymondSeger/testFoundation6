@@ -10,21 +10,15 @@
 </head>
 <body>
 
-
-<div class="callout" data-closable>
-  <p>You can so totally close this!</p>
-  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-    <span aria-hidden="true">&times;</span>
-  </button>
+<div class="small-10 columns">
+  <div class="slider" data-slider data-initial-start="50">
+    <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+    <span class="slider-fill" data-slider-fill></span>
+  </div>
 </div>
-<div class="success callout" data-closable="slide-out-right">
-  <p>You can close me too, and I close using a Motion UI animation.</p>
-  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-    <span aria-hidden="true">&times;</span>
-  </button>
+<div class="small-2 columns">
+  <input type="number" id="sliderOutput1">
 </div>
-
-
 
 
 <script src="js/vendor/jquery.js"></script>
