@@ -27,7 +27,12 @@
 <script>
 $(document).foundation();
 
-var elem = new Foundation.Slider($('#theSlider'), {step: 50});
+var elem = new Foundation.Slider($('#theSlider'), {step: 5});
+
+
+$('#theSlider').on('moved.zf.slider', function() {
+  return console.log('moved');
+});
 
 </script>
 </body>
